@@ -1,0 +1,370 @@
+/* ═══════════════════════════════════════════════════════════
+   NOCTURNE — готическая тёмная тема (даркнет-стиль)
+   ═══════════════════════════════════════════════════════════ */
+
+QWidget {
+    background-color: #0a0a0f;
+    color: #c8c8d0;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 10pt;
+}
+
+QMainWindow, QDialog {
+    background-color: #0a0a0f;
+}
+
+/* ─── Заголовки ─── */
+QLabel#Title {
+    color: #8b00ff;
+    font-size: 18pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 8px;
+}
+
+QLabel#Subtitle {
+    color: #555;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+QLabel#SectionTitle {
+    color: #b040ff;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 6px;
+}
+
+/* ─── Кнопки ─── */
+QPushButton {
+    background-color: #150025;
+    color: #b040ff;
+    border: 1px solid #4a0080;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    min-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: #2a0050;
+    color: #cc44ff;
+    border: 1px solid #8b00ff;
+}
+
+QPushButton:pressed {
+    background-color: #0a0018;
+    border: 1px solid #b040ff;
+}
+
+QPushButton:disabled {
+    background-color: #0f0018;
+    color: #444;
+    border: 1px solid #1a0030;
+}
+
+QPushButton#Danger {
+    color: #ff3333;
+    border: 1px solid #8b0000;
+}
+
+QPushButton#Danger:hover {
+    background-color: #3a0000;
+    border: 1px solid #ff3333;
+}
+
+/* ─── Поля ввода ─── */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #0a0510;
+    color: #d4d4d4;
+    border: 1px solid #2a0050;
+    border-radius: 6px;
+    padding: 10px 14px;
+    selection-background-color: #4a0080;
+    selection-color: #ffffff;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border: 1px solid #8b00ff;
+    background-color: #100818;
+}
+
+QLineEdit:disabled, QTextEdit:disabled {
+    background-color: #0a0a0f;
+    color: #444;
+    border: 1px solid #1a1a2a;
+}
+
+/* ─── Список контактов ─── */
+QListWidget {
+    background-color: #0a0510;
+    border: 1px solid #2a0050;
+    border-radius: 8px;
+    outline: none;
+    padding: 4px;
+}
+
+QListWidget::item {
+    padding: 12px 14px;
+    border-radius: 6px;
+    margin: 2px;
+    border: 1px solid transparent;
+    color: #aaa;
+}
+
+QListWidget::item:hover {
+    background-color: #150025;
+    color: #ccc;
+    border: 1px solid #2a0050;
+}
+
+QListWidget::item:selected {
+    background-color: #1a0030;
+    color: #cc44ff;
+    border: 1px solid #4a0080;
+    border-left: 3px solid #b040ff;
+    font-weight: bold;
+}
+
+/* ─── Область чата ─── */
+QTextBrowser, QTextEdit#ChatView {
+    background-color: #08080d;
+    border: 1px solid #1a0030;
+    border-radius: 10px;
+    padding: 16px;
+    color: #c8c8d0;
+    font-size: 10pt;
+    line-height: 1.5;
+}
+
+/* ─── Скроллбары ─── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    border: none;
+    margin: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #2a0050;
+    min-height: 30px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5a00a0;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    height: 0;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+    margin: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #2a0050;
+    min-width: 30px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #5a00a0;
+}
+
+/* ─── Меню ─── */
+QMenuBar {
+    background-color: #08080d;
+    color: #aaa;
+    border-bottom: 1px solid #2a0050;
+    padding: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #2a0050;
+    color: #cc44ff;
+    border-radius: 4px;
+}
+
+QMenu {
+    background-color: #0f001f;
+    color: #d4d4d4;
+    border: 1px solid #4a0080;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QMenu::item {
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #2a0050;
+    color: #cc44ff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #2a0050;
+    margin: 4px 8px;
+}
+
+/* ─── Строка статуса ─── */
+QStatusBar {
+    background-color: #08080d;
+    color: #666;
+    border-top: 1px solid #2a0050;
+    padding: 4px;
+}
+
+/* ─── Тултипы ─── */
+QToolTip {
+    background-color: #150025;
+    color: #b040ff;
+    border: 1px solid #4a0080;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+/* ─── Табы ─── */
+QTabWidget::pane {
+    border: 1px solid #2a0050;
+    border-radius: 8px;
+    background-color: #0f001f;
+    padding: 4px;
+}
+
+QTabBar::tab {
+    background-color: #0a0510;
+    color: #666;
+    padding: 10px 20px;
+    border: 1px solid #2a0050;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-right: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QTabBar::tab:selected {
+    background-color: #1a0030;
+    color: #b040ff;
+    border-bottom: 2px solid #b040ff;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #150025;
+    color: #aaa;
+}
+
+/* ─── Диалоги ─── */
+QMessageBox {
+    background-color: #0a0a0f;
+}
+
+QMessageBox QLabel {
+    color: #d4d4d4;
+    font-size: 11pt;
+}
+
+QMessageBox QPushButton {
+    min-width: 90px;
+}
+
+/* ─── Вкладки сообщений ─── */
+QLabel#MessageMine {
+    color: #cc44ff;
+    font-weight: bold;
+}
+
+QLabel#MessageTheirs {
+    color: #44cc88;
+    font-weight: bold;
+}
+
+QLabel#MessageTime {
+    color: #444;
+    font-size: 8pt;
+}
+
+/* ─── Индикатор ─── */
+QLabel#Online {
+    color: #44cc44;
+    font-weight: bold;
+}
+
+QLabel#Offline {
+    color: #666;
+}
+
+QLabel#Fingerprint {
+    color: #8b00ff;
+    font-family: "Consolas", monospace;
+    font-size: 9pt;
+    letter-spacing: 1px;
+}
+
+/* ─── Групповые блоки ─── */
+QGroupBox {
+    border: 1px solid #2a0050;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 16px 12px 12px 12px;
+    font-weight: bold;
+    color: #b040ff;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 8px;
+    background-color: #0a0a0f;
+    letter-spacing: 2px;
+}
+
+/* ─── Прогресс-бар ─── */
+QProgressBar {
+    background-color: #0a0510;
+    border: 1px solid #2a0050;
+    border-radius: 4px;
+    text-align: center;
+    color: #b040ff;
+    height: 16px;
+}
+
+QProgressBar::chunk {
+    background-color: #8b00ff;
+    border-radius: 3px;
+}
+
+/* ─── Чекбоксы ─── */
+QCheckBox {
+    color: #aaa;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #0a0510;
+    border: 1px solid #4a0080;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #8b00ff;
+    border: 1px solid #b040ff;
+}

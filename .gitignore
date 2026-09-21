@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NOCTURNE данные
+.nocturne/
+*.db
+identity.json
+contacts.json
+settings.json
+
+# Tor — бинарники не пушим
+tor/tor.exe
+tor/*.dll
+tor/*.so
+tor/tor
+tor/data/
+tor/pluggable_transports/
+tor/tor-gencert.exe
+
+# Отчёты и временные
+*.log
+*.tmp
